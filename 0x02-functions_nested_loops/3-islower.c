@@ -1,24 +1,19 @@
 #include "main.h"
 
 /**
- *print_alphabet_x10 - prints the alphabet 10 times, in lowercase
+ * _islower - checks for lowercase character
+ * @c: the character to check comparison
+ * Return: 1 if c is lowercase, 0 otherwise
  */
 
-void print_alphabet_x10(void)
+int _islower(int c)
 {
-	char c;
-	int i;
-
-	i = 0;
-
-	while (i < 10)
+	if (c > 'a' && c < 'z')
 	{
-		for (c = 'a'; c <= 'z'; c++)
-		{
-			_putchar(c);
-		}
-
-		i++;
-		_putchar('\n');
+		return (1);
+	}
+	else
+	{
+		return (0);
 	}
 }
