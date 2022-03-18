@@ -23,7 +23,7 @@ int main(void)
 			divisor++;
 		}
 	}
-	
+
 	printf("%li\n", quotient);
 
 	return (0);
