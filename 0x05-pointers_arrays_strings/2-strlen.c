@@ -9,7 +9,7 @@
 
 int _strlen(char *s)
 {
-	char u;
+	int u;
 
 	u = 0;
 	while (s[u] != '\0')
