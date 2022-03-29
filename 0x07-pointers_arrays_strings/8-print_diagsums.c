@@ -15,10 +15,10 @@ void print_diagsums(int *a, int size)
 	int sum2 = 0;
 
 	i = 0;
-	while (i < size * size)
+	while (i < size)
 	{
-		sum1 = *(a + i + 1);
-		sum2 = *(a + i + (size - i - 1));
+		sum1 = *(a + i * (size + 1));
+		sum2 = *(a + i * (size + size - i - 1));
 
 		i++;
 	}
